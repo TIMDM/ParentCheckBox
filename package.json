@@ -1,0 +1,33 @@
+{
+  "name": "jquery.parent-check-box-plugin",
+  "title": "jQuery parent check box plugin",
+  "description": "A jQuery plugin for creating depending checkboxes, whit a parent/child relation",
+  "version": "0.1.0",
+  "homepage": "https://github.com/TIMDM/ParentCheckBox",
+  "author": {
+    "name": "Joris Ros",
+    "email": "joris@timdm.nl",
+    "url": "http://www.timdm.nl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TIMDM/ParentCheckBox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TIMDM/ParentCheckBox/issues"
+  },
+  "main": "dist/jquery.parent-check-box-plugin",
+  "engines": {
+    "node": ">=0.6"
+  },
+  "scripts": {
+    "test": "grunt travis --verbose"
+  },
+  "dependencies": {
+    "jQuery": "~1.7.3"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.14"
+  },
+  "keywords": []
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tests for plugin</title>
+    <link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.19.0.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="src/ParentCheckBox.plugin.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $("#elementTwo").parentCheckBox("#elementOne");
+            $("#elementThree").parentCheckBox("#elementTwo");
+        });
+    </script>
+</head>
+<body>
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+
+<div id="elementWrapper">
+
+</div>
+
+<script src="//code.jquery.com/qunit/qunit-1.19.0.js"></script>
+<script src="src/tests.js"></script>
+
+</body>
+</html>
