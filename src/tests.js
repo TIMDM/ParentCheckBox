@@ -1,3 +1,19 @@
+
+var createDefaultStructure = function(){
+    var elementWrapper = $('#elementWrapper');
+
+    var checkbox = $('<input type="checkbox" />');
+    var parentCheckBox = checkbox.clone();
+    parentCheckBox.attr('id','parent');
+
+    var childCheckBox = checkbox.clone();
+    childCheckBox.attr('id', 'child');
+
+    elementWrapper.append(parentCheckBox);
+    elementWrapper.append(childCheckBox);
+
+};
+
 QUnit.test( "Select parent test", function( assert ) {
     createDefaultStructure();
 
@@ -24,18 +40,3 @@ QUnit.testDone(function( details ) {
     elementWrapper.empty();
 });
 
-var createDefaultStructure = function(){
-    var elementWrapper = $('#elementWrapper');
-
-    var checkbox = $('<input type="checkbox" />');
-    var parentCheckBox = checkbox.clone();
-    parentCheckBox.attr('id','parent');
-
-    var childCheckBox = checkbox.clone();
-    childCheckBox.attr('id', 'child');
-
-    elementWrapper.append(parentCheckBox);
-    elementWrapper.append(childCheckBox);
-
-
-}
