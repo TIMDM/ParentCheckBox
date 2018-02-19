@@ -17,7 +17,7 @@
     function Plugin ( element, options ) {
         this.element = element;
 
-        if(typeof options == 'string')
+        if(typeof options === 'string')
         {
             defaults.parentElement = $(options);
         }
